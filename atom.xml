@@ -50,7 +50,7 @@
     <link href="https://micheal024.github.io/2021/04/18/%E6%96%87%E7%AB%A0title/"/>
     <id>https://micheal024.github.io/2021/04/18/%E6%96%87%E7%AB%A0title/</id>
     <published>2021-04-18T09:14:54.000Z</published>
-    <updated>2025-09-01T14:15:34.361Z</updated>
+    <updated>2025-11-25T15:13:17.909Z</updated>
     
     <content type="html"><![CDATA[<p>这是一篇示例文章，你可以在这里添加你的内容。</p><h2 id="文章内容"><a href="#文章内容" class="headerlink" title="文章内容"></a>文章内容</h2><p>这里可以编写你的文章正文内容。</p><h2 id="使用Markdown语法"><a href="#使用Markdown语法" class="headerlink" title="使用Markdown语法"></a>使用Markdown语法</h2><p>你可以使用Markdown语法来格式化你的文章：</p><ul><li>列表项1</li><li>列表项2</li><li>列表项3</li></ul><h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hello, Hexo!&#x27;</span>);</span><br></pre></td></tr></table></figure><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>你可以这样插入图片：</p><p><img src="/2021/04/18/%E6%96%87%E7%AB%A0title/butterfly-icon.png" alt="图片描述"></p>]]></content>
     
