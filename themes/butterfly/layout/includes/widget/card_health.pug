@@ -1,0 +1,41 @@
+//- 荣耀运动健康数据卡片
+.card-widget.card-health
+  .item-headline
+    i.fas.fa-heartbeat
+    span 健康数据
+  .health-content
+    .health-item
+      .health-icon
+        i.fas.fa-heart.health-heart
+      .health-info
+        .health-label 当前心率
+        .health-value#health-heartrate
+          span.value --
+          span.unit bpm
+    .health-item
+      .health-icon
+        i.fas.fa-bed
+      .health-info
+        .health-label 睡眠时长
+        .health-value#health-sleep
+          span.value --
+          span.unit 小时
+    .health-item
+      .health-icon
+        i.fas.fa-moon
+      .health-info
+        .health-label 睡眠状态
+        .health-value#health-sleep-status
+          span.value --
+    .health-item
+      .health-icon
+        i.fas.fa-walking
+      .health-info
+        .health-label 今日步数
+        .health-value#health-steps
+          span.value --
+          span.unit 步
+  .health-footer
+    span.update-time#health-update-time 数据加载中...
+    a.refresh-btn#health-refresh(href="javascript:void(0)" title="刷新数据")
+      i.fas.fa-sync-alt

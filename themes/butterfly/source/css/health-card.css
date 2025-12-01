@@ -1,0 +1,165 @@
+/* 荣耀健康数据卡片样式 */
+.card-health {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.card-health .item-headline {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--font-color);
+}
+
+.card-health .item-headline i {
+  color: #ff6b6b;
+  margin-right: 8px;
+}
+
+.health-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.health-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  background: var(--btn-bg);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.health-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+/* 心率图标 - 红色 */
+.health-item:nth-child(1) .health-icon {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+  color: #fff;
+}
+
+/* 睡眠时长图标 - 紫色 */
+.health-item:nth-child(2) .health-icon {
+  background: linear-gradient(135deg, #a55eea, #8854d0);
+  color: #fff;
+}
+
+/* 睡眠状态图标 - 蓝色 */
+.health-item:nth-child(3) .health-icon {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+}
+
+/* 步数图标 - 绿色 */
+.health-item:nth-child(4) .health-icon {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  color: #fff;
+}
+
+.health-info {
+  flex: 1;
+}
+
+.health-label {
+  font-size: 12px;
+  color: var(--font-color);
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.health-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--font-color);
+}
+
+.health-value .value {
+  margin-right: 4px;
+}
+
+.health-value .unit {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* 心跳动画 */
+.health-heart {
+  animation: heartbeat 1.2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.2); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.2); }
+  70% { transform: scale(1); }
+}
+
+.health-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--btn-bg);
+}
+
+.update-time {
+  font-size: 11px;
+  color: var(--font-color);
+  opacity: 0.5;
+}
+
+.refresh-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--btn-bg);
+  color: var(--font-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background: var(--btn-hover-color);
+  transform: rotate(180deg);
+}
+
+.refresh-btn.loading i {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 深色模式适配 */
+[data-theme="dark"] .health-item {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .health-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
