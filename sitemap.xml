@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://github.com/micheal024/2019/04/07/hello-world/</loc>
+    <loc>https://github.com/2019/04/07/hello-world/</loc>
     
     <lastmod>2025-11-26</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/micheal024/2025/11/26/%E8%B5%B7%E6%BA%90/</loc>
+    <loc>https://github.com/2025/11/26/%E8%B5%B7%E6%BA%90/</loc>
     
     <lastmod>2025-11-26</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/micheal024/2025/04/18/%E6%96%87%E7%AB%A0title/</loc>
+    <loc>https://github.com/2025/04/18/%E6%96%87%E7%AB%A0title/</loc>
     
     <lastmod>2025-11-26</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/micheal024/tags/index.html</loc>
+    <loc>https://github.com/tags/index.html</loc>
     
     <lastmod>2025-04-18</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/micheal024/categories/index.html</loc>
+    <loc>https://github.com/categories/index.html</loc>
     
     <lastmod>2025-04-18</lastmod>
     
@@ -48,7 +48,7 @@
   
 
   <url>
-    <loc>https://github.com/micheal024</loc>
+    <loc>https://github.com/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -56,14 +56,14 @@
 
   
   <url>
-    <loc>https://github.com/micheal024/tags/node-js/</loc>
+    <loc>https://github.com/tags/node-js/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://github.com/micheal024/tags/hexo/</loc>
+    <loc>https://github.com/tags/hexo/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -72,7 +72,7 @@
 
   
   <url>
-    <loc>https://github.com/micheal024/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://github.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
