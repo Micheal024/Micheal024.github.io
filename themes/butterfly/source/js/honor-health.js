@@ -161,10 +161,10 @@ class HonorHealthManager {
     const pad = { l: 2, r: 2, t: 4, b: 4 };
     const cw = w - pad.l - pad.r, ch = h - pad.t - pad.b;
 
-    // 渐变填充
+    // 渐变填充 - 使用红粉色
     const grad = ctx.createLinearGradient(0, pad.t, 0, h - pad.b);
-    grad.addColorStop(0, 'rgba(255,255,255,0.25)');
-    grad.addColorStop(1, 'rgba(255,255,255,0.02)');
+    grad.addColorStop(0, 'rgba(255,107,107,0.6)');
+    grad.addColorStop(1, 'rgba(255,107,107,0.1)');
 
     ctx.beginPath();
     history.forEach((p, i) => {
@@ -178,24 +178,27 @@ class HonorHealthManager {
     ctx.fillStyle = grad;
     ctx.fill();
 
-    // 折线
+    // 折线 - 鲜艳的红色
     ctx.beginPath();
     history.forEach((p, i) => {
       const x = pad.l + (i / (history.length - 1)) * cw;
       const y = pad.t + (1 - (p.value - min) / range) * ch;
       i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
     });
-    ctx.strokeStyle = 'rgba(255,255,255,0.7)';
-    ctx.lineWidth = 1.2;
+    ctx.strokeStyle = '#ff6b6b';
+    ctx.lineWidth = 2;
     ctx.stroke();
 
-    // 当前点
+    // 当前点 - 白色带红色边框
     const last = history[history.length - 1];
     const lx = pad.l + cw, ly = pad.t + (1 - (last.value - min) / range) * ch;
     ctx.beginPath();
-    ctx.arc(lx, ly, 2.5, 0, Math.PI * 2);
-    ctx.fillStyle = '#fff';
+    ctx.arc(lx, ly, 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#ffffff';
     ctx.fill();
+    ctx.strokeStyle = '#ff6b6b';
+    ctx.lineWidth = 2;
+    ctx.stroke();
   }
 
   async refreshData() {

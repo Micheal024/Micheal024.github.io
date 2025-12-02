@@ -4,7 +4,11 @@
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 15px;
-  color: #fff;
+  color: #ffffff !important;
+}
+
+.card-health * {
+  color: #ffffff !important;
 }
 
 .health-header {
@@ -19,10 +23,12 @@
   align-items: center;
   font-size: 14px;
   font-weight: 600;
+  color: #ffffff !important;
 }
 
 .health-title i {
   margin-right: 6px;
+  color: #ffffff !important;
   animation: heartbeat 1.2s ease-in-out infinite;
 }
 
@@ -41,15 +47,15 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(255,255,255,0.15);
-  color: #fff;
+  background: rgba(255,255,255,0.2) !important;
+  color: #ffffff !important;
   font-size: 11px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .refresh-btn:hover {
-  background: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.35) !important;
   transform: rotate(180deg);
 }
 
@@ -88,23 +94,24 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
+  color: #ffffff !important;
 }
 
 .hr-unit {
   font-size: 11px;
   margin-left: 3px;
-  opacity: 0.8;
+  color: rgba(255,255,255,0.8) !important;
 }
 
 .heartrate-label {
   font-size: 10px;
-  opacity: 0.7;
+  color: rgba(255,255,255,0.7) !important;
   margin-top: 2px;
 }
 
 .heartrate-chart-wrap {
   height: 45px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.15);
   border-radius: 6px;
   padding: 4px;
 }
@@ -125,7 +132,7 @@
 
 /* 睡眠区 */
 .sleep-section {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.15);
   border-radius: 8px;
   padding: 8px;
 }
@@ -144,16 +151,21 @@
   gap: 3px;
   font-size: 12px;
   font-weight: 600;
+  color: #ffffff !important;
 }
 
 .sleep-item i {
   font-size: 10px;
-  opacity: 0.8;
+  color: #ffd700 !important;
+}
+
+.sleep-item:last-child i {
+  color: #ffb347 !important;
 }
 
 .sleep-arrow {
   font-size: 10px;
-  opacity: 0.5;
+  color: rgba(255,255,255,0.6) !important;
 }
 
 .sleep-status {
@@ -162,18 +174,19 @@
   justify-content: center;
   gap: 4px;
   font-size: 11px;
+  color: #ffffff !important;
 }
 
 .sleep-status i {
-  font-size: 6px;
+  font-size: 8px;
 }
 
-.sleep-status.awake i { color: #4ade80; }
-.sleep-status.sleeping i { color: #fbbf24; }
+.sleep-status.awake i { color: #4ade80 !important; }
+.sleep-status.sleeping i { color: #fbbf24 !important; }
 
 /* 步数区 */
 .steps-section {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.15);
   border-radius: 8px;
   padding: 8px;
   display: flex;
@@ -184,17 +197,18 @@
 
 .steps-section i {
   font-size: 14px;
-  opacity: 0.8;
+  color: #4ade80 !important;
 }
 
 .steps-num {
   font-size: 18px;
   font-weight: 700;
+  color: #ffffff !important;
 }
 
 .steps-unit {
   font-size: 11px;
-  opacity: 0.7;
+  color: rgba(255,255,255,0.7) !important;
 }
 
 /* 底部 */
@@ -202,5 +216,5 @@
   margin-top: 10px;
   text-align: center;
   font-size: 10px;
-  opacity: 0.6;
+  color: rgba(255,255,255,0.6) !important;
 }
