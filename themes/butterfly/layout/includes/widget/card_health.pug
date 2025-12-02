@@ -4,37 +4,54 @@
     i.fas.fa-heartbeat
     span 健康数据
   .health-content
-    .health-item
-      .health-icon
-        i.fas.fa-heart.health-heart
-      .health-info
+    //- 心率模块 - 带折线图
+    .health-card.health-heartrate-card
+      .health-card-header
+        .health-icon-small
+          i.fas.fa-heart.health-heart
         .health-label 当前心率
-        .health-value#health-heartrate
-          span.value --
-          span.unit bpm
-    .health-item
-      .health-icon
-        i.fas.fa-bed
-      .health-info
-        .health-label 睡眠时长
-        .health-value#health-sleep
-          span.value --
-          span.unit 小时
-    .health-item
-      .health-icon
-        i.fas.fa-moon
-      .health-info
-        .health-label 睡眠状态
-        .health-value#health-sleep-status
-          span.value --
-    .health-item
-      .health-icon
-        i.fas.fa-walking
-      .health-info
+      .health-card-body
+        .heartrate-display
+          span.heartrate-value#heartrate-value --
+          span.heartrate-unit bpm
+        .heartrate-chart-container
+          canvas#heartrate-chart
+      .health-card-footer
+        span.chart-label 今日心率趋势
+    
+    //- 睡眠信息模块
+    .health-card.health-sleep-card
+      .health-card-header
+        .health-icon-small
+          i.fas.fa-bed
+        .health-label 睡眠记录
+      .health-card-body.sleep-body
+        .sleep-time-row
+          .sleep-time-item
+            i.fas.fa-moon
+            span.sleep-label 入睡
+            span.sleep-value#sleep-start --:--
+          .sleep-time-divider
+            i.fas.fa-arrow-right
+          .sleep-time-item
+            i.fas.fa-sun
+            span.sleep-label 起床
+            span.sleep-value#sleep-end --:--
+        .sleep-status-row
+          .sleep-status#sleep-status
+            i.fas.fa-circle
+            span 状态获取中...
+    
+    //- 步数模块
+    .health-card.health-steps-card
+      .health-card-header
+        .health-icon-small
+          i.fas.fa-walking
         .health-label 今日步数
-        .health-value#health-steps
-          span.value --
-          span.unit 步
+      .health-card-body.steps-body
+        span.steps-value#health-steps --
+        span.steps-unit 步
+
   .health-footer
     span.update-time#health-update-time 数据加载中...
     a.refresh-btn#health-refresh(href="javascript:void(0)" title="刷新数据")
