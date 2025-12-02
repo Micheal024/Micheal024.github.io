@@ -145,8 +145,8 @@ class HonorHealthManager {
     if (!canvas || history.length < 2) return;
 
     const ctx = canvas.getContext('2d');
-    const w = canvas.parentElement.offsetWidth - 8;
-    const h = 37;
+    const w = canvas.parentElement.offsetWidth - 12;
+    const h = 38;
     
     canvas.width = w * 2;
     canvas.height = h * 2;
@@ -158,13 +158,13 @@ class HonorHealthManager {
     const vals = history.map(d => d.value);
     const min = Math.min(...vals) - 5, max = Math.max(...vals) + 5;
     const range = max - min || 1;
-    const pad = { l: 2, r: 2, t: 4, b: 4 };
+    const pad = { l: 3, r: 3, t: 5, b: 5 };
     const cw = w - pad.l - pad.r, ch = h - pad.t - pad.b;
 
-    // 渐变填充 - 使用红粉色
+    // 渐变填充 - 红粉色
     const grad = ctx.createLinearGradient(0, pad.t, 0, h - pad.b);
-    grad.addColorStop(0, 'rgba(255,107,107,0.6)');
-    grad.addColorStop(1, 'rgba(255,107,107,0.1)');
+    grad.addColorStop(0, 'rgba(255,107,107,0.4)');
+    grad.addColorStop(1, 'rgba(255,107,107,0.05)');
 
     ctx.beginPath();
     history.forEach((p, i) => {

@@ -1,14 +1,10 @@
-/* 健康数据卡片 - 整合版 */
+/* 健康数据卡片 - 白底彩色文字版 */
 .card-health {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 15px;
-  color: #ffffff !important;
-}
-
-.card-health * {
-  color: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .health-header {
@@ -16,6 +12,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
 .health-title {
@@ -23,12 +21,12 @@
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff !important;
+  color: #ff6b6b;
 }
 
 .health-title i {
   margin-right: 6px;
-  color: #ffffff !important;
+  color: #ff6b6b;
   animation: heartbeat 1.2s ease-in-out infinite;
 }
 
@@ -41,21 +39,22 @@
 }
 
 .refresh-btn {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(255,255,255,0.2) !important;
-  color: #ffffff !important;
+  background: #f0f0f0;
+  color: #666;
   font-size: 11px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .refresh-btn:hover {
-  background: rgba(255,255,255,0.35) !important;
+  background: #e0e0e0;
+  color: #333;
   transform: rotate(180deg);
 }
 
@@ -91,29 +90,29 @@
 }
 
 .hr-value {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1;
-  color: #ffffff !important;
+  color: #ff6b6b;
 }
 
 .hr-unit {
-  font-size: 11px;
-  margin-left: 3px;
-  color: rgba(255,255,255,0.8) !important;
+  font-size: 12px;
+  margin-left: 4px;
+  color: #999;
 }
 
 .heartrate-label {
-  font-size: 10px;
-  color: rgba(255,255,255,0.7) !important;
-  margin-top: 2px;
+  font-size: 11px;
+  color: #999;
+  margin-top: 4px;
 }
 
 .heartrate-chart-wrap {
-  height: 45px;
-  background: rgba(255,255,255,0.15);
-  border-radius: 6px;
-  padding: 4px;
+  height: 50px;
+  background: linear-gradient(180deg, rgba(255,107,107,0.08) 0%, rgba(255,107,107,0.02) 100%);
+  border-radius: 8px;
+  padding: 6px;
 }
 
 #heartrate-chart {
@@ -132,83 +131,85 @@
 
 /* 睡眠区 */
 .sleep-section {
-  background: rgba(255,255,255,0.15);
-  border-radius: 8px;
-  padding: 8px;
+  background: linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.1) 100%);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .sleep-times {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  margin-bottom: 6px;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .sleep-item {
   display: flex;
   align-items: center;
-  gap: 3px;
-  font-size: 12px;
+  gap: 4px;
+  font-size: 13px;
   font-weight: 600;
-  color: #ffffff !important;
+  color: #5a67d8;
 }
 
 .sleep-item i {
-  font-size: 10px;
-  color: #ffd700 !important;
+  font-size: 12px;
+  color: #667eea;
 }
 
 .sleep-item:last-child i {
-  color: #ffb347 !important;
+  color: #f6ad55;
 }
 
 .sleep-arrow {
-  font-size: 10px;
-  color: rgba(255,255,255,0.6) !important;
+  font-size: 12px;
+  color: #aaa;
 }
 
 .sleep-status {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  font-size: 11px;
-  color: #ffffff !important;
+  gap: 5px;
+  font-size: 12px;
+  color: #666;
 }
 
 .sleep-status i {
   font-size: 8px;
 }
 
-.sleep-status.awake i { color: #4ade80 !important; }
-.sleep-status.sleeping i { color: #fbbf24 !important; }
+.sleep-status.awake i { color: #48bb78; }
+.sleep-status.sleeping i { color: #ed8936; }
+.sleep-status.awake span { color: #48bb78; }
+.sleep-status.sleeping span { color: #ed8936; }
 
 /* 步数区 */
 .steps-section {
-  background: rgba(255,255,255,0.15);
-  border-radius: 8px;
-  padding: 8px;
+  background: linear-gradient(135deg, rgba(72,187,120,0.1) 0%, rgba(56,178,172,0.1) 100%);
+  border-radius: 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .steps-section i {
-  font-size: 14px;
-  color: #4ade80 !important;
+  font-size: 16px;
+  color: #48bb78;
 }
 
 .steps-num {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  color: #ffffff !important;
+  color: #38a169;
 }
 
 .steps-unit {
-  font-size: 11px;
-  color: rgba(255,255,255,0.7) !important;
+  font-size: 12px;
+  color: #999;
 }
 
 /* 底部 */
@@ -216,5 +217,24 @@
   margin-top: 10px;
   text-align: center;
   font-size: 10px;
-  color: rgba(255,255,255,0.6) !important;
+  color: #aaa;
+}
+
+/* 深色模式 */
+[data-theme="dark"] .card-health {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .refresh-btn {
+  background: rgba(255,255,255,0.1);
+  color: #aaa;
+}
+
+[data-theme="dark"] .refresh-btn:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+[data-theme="dark"] .health-header {
+  border-bottom-color: rgba(255,255,255,0.1);
 }
